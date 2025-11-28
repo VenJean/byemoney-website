@@ -1,0 +1,30 @@
+/* Fade In Slow (untuk animasi muncul perlahan) */
+@keyframes fadeInSlow {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeInSlow {
+  animation: fadeInSlow 1.5s ease-in-out forwards;
+}
+
+/* Marquee untuk warning tape */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.animate-fadeInOut {
+  animation: fadeInOut 2s infinite;
+}
